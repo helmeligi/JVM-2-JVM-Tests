@@ -11,11 +11,7 @@ Now, a student fills his answer object "IAnswer" and wants to pass it to the gra
 Now, how to send the class?
 
 #Proposed Solutions
--Mapped Bus Library [In Progress]
--Socket-Based (Bare-Bones) Networking
--Netty
-
-#Benchmarks
-
-#Conclusion
-
+##Mapped Bus Library + Serialization
+I could serialize/deserialize my objects, but with limitations: <br/>
+-But I needed to name the objects the same way and also for the package!<br/>
+-Non-static fields are not serialized! e.g. constants<br/>
